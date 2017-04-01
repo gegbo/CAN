@@ -1,9 +1,10 @@
-body { color: black;
-	background:#800000;
+body {
+	color: white;
+	background: #E9967A;
 	font-family: avant garde,arvo, courier, arial, verdana, times new roman;
 	font-size: 18px;
 	line-height: 150%;
-	
+	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -57,8 +58,6 @@ header {
 }
 
 h1 {
-	color:black;
-	
 	font-weight: normal;
 	line-height: 125%;	
 }

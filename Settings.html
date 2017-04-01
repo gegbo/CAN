@@ -14,8 +14,12 @@
 		<label>Zip Code: </label>
 		<input type="text" name="">
 		<button type="button">Apply</button>
-		<button type="button">Back</button>
+		<button type="button" onclick="goBack()">Back</button>
 	</form>
-
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
 </body>
 </html>

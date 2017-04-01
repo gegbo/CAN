@@ -14,13 +14,16 @@
 		<br>
 		<label>Date: </label> <input type="text" name="date" required>
 		<br>
-		<label>Description: </label>
+		<textarea rows="4" cols="50"> </textarea>
 		<br>
-		<textarea> </textarea>
 
 		<button type="button">Confirm</button>
-		<button type="button">Cancel</button>
+		<button type="button" onclick="goClick()">Cancel</button>
 	</form>
-
+	<script>
+	function goBack() {
+	    window.history.back();
+	}
+	</script>
 </body>
 </html>

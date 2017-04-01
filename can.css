@@ -88,17 +88,6 @@ section {
 	margin: 0 0 72px;
 }	
 
-	
-table {
-	width: 100%;
-	margin: 0 0 54px;
-}
-
-th {
-	text-align: left;
-}
-
-
 footer {
 	border-top: dotted #b28c03 1px;
 	padding-top: 18px;
@@ -125,14 +114,13 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
   }
 
-input[type=text]:focus {
-    width: 100%;
-}
+
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
+    margin: 0 0 54px;
 }
 
 td, th {
@@ -147,7 +135,7 @@ tr:nth-child(even) {
 
 /* Full-width input fields */
   input[type=text], input[type=password] {
-      width: 100%;
+      width: 50%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
@@ -155,16 +143,9 @@ tr:nth-child(even) {
       box-sizing: border-box;
   }
 
-  /* Set a style for all buttons */
-  button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-  }
+  input[type=text]:focus {
+    width: 50%;
+}
 
   /* Extra styles for the cancel button */
   .cancelbtn {
@@ -190,15 +171,6 @@ tr:nth-child(even) {
       display: table;
   }
 
-  input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-  }
-
   button {
       background-color: #4CAF50;
       color: white;
@@ -206,7 +178,7 @@ tr:nth-child(even) {
       margin: 8px 0;
       border: none;
       cursor: pointer;
-      width: 100%;
+      width: 50%;
   }
 
   button:hover {

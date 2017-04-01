@@ -82,21 +82,21 @@
 
     <h2>Login Form</h2>
 
-  <form action="/action_page.php">
+  <form action="">
     <div class="imgcontainer">
-      <img src="can(2).png" alt="Avatar" class="avatar">
+      <img src="can (2).png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
-
+      <br>
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
       <div class="button" style="width:100%">
-        <button style="width:50%">Login</button>
-        <button style="width:50%">Register</button>
+        <button style="width:50%" action="CAN_Main_Page.html" >Login</button>
+        <button style="width:50%" onclick="window.location.href='./CAN_signup.html'" >Register</button>
       </div>
       <!--<button type="submit">Login</button>-->
       <input type="checkbox" checked="checked"> Remember me

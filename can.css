@@ -1,0 +1,111 @@
+body { color: black;
+	background:#800000;
+	font-family: avant garde,arvo, courier, arial, verdana, times new roman;
+	font-size: 18px;
+	line-height: 150%;
+	
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#wrapper {
+	background: #ffffff;
+	
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 18px 36px;
+}
+
+#site-header {
+	border-bottom: dotted #b28c03 1px;
+	padding-bottom: 18px;
+}
+
+
+#site-header .logo {
+    display: inline-block;
+}
+
+#site-header .logo img {
+
+}
+
+#site-header nav {
+    display: inline-block;
+}
+
+#site-header ul {
+    padding: 0;
+    margin: 0;
+}
+
+#site-header ul > li {
+     display: inline-block;
+}
+
+#site-header ul > li a {
+    display: block;
+}
+
+
+header {
+	border-bottom: dotted #b28c03 1px;
+	padding-bottom: 18px;
+}
+
+h1 {
+	color:maroon;
+	
+	font-weight: normal;
+	line-height: 125%;	
+}
+
+header time {
+	font-style: italic;
+	font-family: monospace;
+	display: block;
+}
+	
+header p {	
+	color: black;
+	font-size: 125%;
+	line-height: 150%;
+}
+
+a {
+	color: #b28c03;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+section {
+	margin: 0 0 72px;
+}	
+
+	
+table {
+	width: 100%;
+	margin: 0 0 54px;
+}
+
+th {
+	text-align: left;
+}
+
+
+footer {
+	border-top: dotted #b28c03 1px;
+	padding-top: 18px;
+}
+
+
+  table, th, td {
+     border: 1px solid black;
+}

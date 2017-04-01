@@ -5,8 +5,8 @@ body {
 	font-size: 18px;
 	line-height: 150%;
 	text-align: center;
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	padding: 15px,15px,15px,15px;
 }
 
 
@@ -93,61 +93,58 @@ footer {
 	padding-top: 18px;
 }
 
-/*
-  table, th, td {
-     border: 1px solid black;
-}
-*/
 
-input[type=text] {
-    width: 130px;
+table {
+	margin: 0 auto; 
+}
+
+
+input[type=text],input[type=password] {
+    width: 200px;
+	text-align: center;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 20px 12px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
 
 
 
-table {
+.listings {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
-    margin: 0 0 54px;
 }
 
-td, th {
+.listings td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
-tr:nth-child(even) {
+.listings tr:nth-child(even) {
     background-color: #dddddd;
 }
 
 /* Full-width input fields */
-  input[type=text], input[type=password] {
-      width: 50%;
+  input[type=submit]{
+      width: 250px;
+	  text-align: center;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
-      border: 1px solid #ccc;
+      border: 3px solid #ccc;
       box-sizing: border-box;
   }
 
-  input[type=text]:focus {
-    width: 50%;
-}
+ #change_submit {
+	width: 100px;
+ }
 
-  /* Extra styles for the cancel button */
+ /* Extra styles for the cancel button */
   .cancelbtn {
       padding: 14px 20px;
       background-color: #f44336;
@@ -171,17 +168,17 @@ tr:nth-child(even) {
       display: table;
   }
 
-  button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 50%;
-  }
+  /* button { */
+      /* background-color: #4CAF50; */
+      /* color: white; */
+      /* padding: 14px 20px; */
+      /* margin: 8px 0; */
+      /* border: none; */
+      /* cursor: pointer; */
+      /* width: 50%; */
+  /* } */
 
-  button:hover {
+  input[type=submit]:hover {
       opacity: 0.8;
   }
 

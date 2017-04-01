@@ -2,119 +2,105 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./can.css" />
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="can.css" />
+    <title>Listings</title>
   </head>
-
-<style>
-  /*
-  input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-
-input[type=text]:focus {
-    width: 100%;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {sss
-    background-color: #dddddd;
-}
-*/
-</style>
-
   <body>
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"> + </button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="./newActivismForm.html">Activism</a>
-    <a href="./newVolunteerForm.html">Volunteering</a>
-    <a href="./Settings.html">Settings</a>
-  </div>
-</div>
-    <form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
-<table>
-<tr>
-<th>How</th>
-<th>Who</th>
-<th>When</th>
-</tr>
-<tr>
-<td>Help us make 13th street a historical landmark</td>
-<td>Ted Baker</td>
-<td>4/1/17</td>
-</tr>
-<tr>
-<td>Sign to help Save EOF program</td>
-<td>Rutgers University </td>
-<td>4/1/17</td>
-</tr>
-<tr>
-<td>Help plant in local community garden</td>
-<td>Mary Brown</td>
-<td>4/1/17</td>
-</tr>
-<tr>
-<td>Volunteer to clean up local Park</td>
-<td>YMCA</td>
-<td>4/1/17</td>
-</tr>
-<tr>
-<td>Sign to get city council to fund a new community center</td>
-<td>United Baptist Church</td>
-<td>4/1/17</td>
-</tr>
-<tr>
-<td>Local Youth Engagement Day Volunteers needed</td>
-<td>Union Communiy Organization Group</td>
-<td>4/1/17</td>
-</tr>
-</table>
-  <script type="text/javascript">
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+  <!--Activism,Volunteering,Settings[Also add in click listeners for one of the table cells]-->
+	<img width=100px height=auto src="can (2).png" alt="logo" class="Avatar">
+	<div class="options">
+		<form method="POST">
+			<input type="submit" formaction="newActivismForm.html" value="Add New Activism Opportunity">
+			<input type="submit" formaction="newVolunteerForm.html" value="Add New Volunteer Opportunity">
+			<input id="settings" type="submit" formaction="Settings.html" value="Settings">
+			<input type="submit" formaction="CAN.html" value="Log Out">
+		</form>
+	</div>
+	
+	<input type="text" name="search" placeholder="Enter zipcode">
+	<input id="change_submit" type="submit" name="Change">
+	<br>
+	<p><b>Opportunities Near You</b></p>
+	
+	<div id="first_showing">
+		<table class="listings">
+			<tr>
+				<th>How</th>
+				<th>Who</th>
+				<th>When</th>
+			</tr>
+			<tr>
+				<td>Sign to help Save EOF program</td>
+				<td>Rutgers University </td>
+				<td>4/1/17</td>
+			</tr>
+			<tr>
+				<td>Sign to get city council to fund a new community center</td>
+				<td>United Baptist Church</td>
+				<td>4/12/17</td>
+			</tr>
+			<tr>
+				<td>Local Youth Engagement Day Volunteers needed</td>
+				<td>Union Communiy Organization Group</td>
+				<td>4/12/17</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="second_showing">
+		<table class="listings">
+			<tr>
+				<th>How</th>
+				<th>Who</th>
+				<th>When</th>
+			</tr>
+			<tr>
+				<td>Help plant in local community garden</td>
+				<td>Mary Brown</td>
+				<td>4/5/17</td>
+			</tr>
+			<tr id="demo">
+				<td>Volunteer to clean up local Park</td>
+				<td>YMCA</td>
+				<td>4/11/17</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="third_showing">
+		<table class="listings">
+			<tr>
+				<th>How</th>
+				<th>Who</th>
+				<th>When</th>
+			</tr>
+			<tr>
+				<td>Help us make 13th street a historical landmark</td>
+				<td>Ted Baker</td>
+				<td>4/1/17</td>
+			</tr>
+		</table
+	</div>
+	<script>
+	
+		window.onload = function() {
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+			document.getElementById("demo").addEventListener("click", function() {
+			window.location.replace("event_detail.html");
+			});
+			
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-  </script>
+			
+			document.getElementById("change_submit").addEventListener("click",function() {
+				document.getElementById('first_showing').style.display = 'none';
+				document.getElementById('second_showing').style.display = 'block';	
+				document.getElementById('third_showing').style.display = 'none';	
+			});
+						
+			document.getElementById('first_showing').style.display = 'block';
+			document.getElementById('second_showing').style.display = 'none';
+			document.getElementById('third_showing').style.display = 'none';
+		};
+	</script>
   </body>
 </html>

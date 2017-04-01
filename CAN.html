@@ -1,111 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <header>CAN</header>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./can.css" />
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="can.css" />
+    <title>CAN</title>
   </head>
-  <style>
-
-  /*
->>>>>>> origin/master
-  form {
-      border: 3px solid #f1f1f1;
-  }
-
-  input[type=text], input[type=password] {
-      background-color: #E9967A;
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-  }
-
-  button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-  }
-
-  button:hover {
-      opacity: 0.8;
-  }
-
-  .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-  }
-
-  .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-  }
-
-  img.avatar {
-      width: 40%;
-      border-radius: 50%;
-  }
-
-  .container {
-      background-color: #E9967A;
-      padding: 16px;
-  }
-
-  span.psw {
-      float: right;
-      padding-top: 16px;
-  }
-
-  /* Change styles for span and cancel button on extra small screens
-  @media screen and (max-width: 300px) {
-      span.psw {
-            background-color: #E9967A;
-         display: block;
-         float: none;
-      }
-      .cancelbtn {
-            background-color: #E9967A;
-         width: 100%;
-      }
-  }
-*/
-</style>
   <body>
+    <form method="POST">
+		<div class="imgcontainer">
+		  	<img width=100px height=auto src="can (2).png" alt="logo" class="Avatar">
+		</div>
 
-    <h2>Login Form</h2>
+		<h2>Login Form</h2>
 
-  <form action="">
-    <div class="imgcontainer">
-      <img src="can (2).png" alt="Avatar" class="avatar">
-    </div>
+		<div class="container">
+		  <table>
+				<tr>
+					<td><label><b>Username</b></label></td>
+					<td><input type="text" placeholder="Enter Username" name="uname"></td>
+		  		</tr>
+				<tr>
+					<td><label><b>Password</b></label></td>
+					<td><input type="password" placeholder="Enter Password" name="psw"></td>
+				</tr>
+			</table>
+		  <div class="button">
+			<input type="submit" formaction="CAN_Main_Page.html" value="Login">
+			<input type="submit" formaction="CAN_signup.html" value="Register">
+		  </div>
+		  <input type="checkbox" checked="checked">Remember me
+		</div>
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-      <br>
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <div class="button" style="width:100%">
-        <button style="width:50%" action="CAN_Main_Page.html" >Login</button>
-        <button style="width:50%" onclick="window.location.href='./CAN_signup.html'" >Register</button>
-      </div>
-      <!--<button type="submit">Login</button>-->
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+		<div class="container" style="background-color:#f1f1f1">
+		  <span class="psw"><a href="#">Forgot password?</a></span>
+		</div>
   </form>
 
 

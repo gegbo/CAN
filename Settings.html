@@ -6,20 +6,14 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>Choose Activism Type</h1>
-	<form action="">
-		<label>Username: </label>
-		<input type="text" placeholder="" name="Username">
-		<br>
-		<label>Zip Code: </label>
-		<input type="text" name="">
-		<button type="button">Apply</button>
-		<button type="button" onclick="goBack()">Back</button>
+	<img width=100px height=auto src="can (2).png" alt="logo" class="Avatar">
+	<h1>Settings</h1>
+	<form method="POST">
+		<label>New Zip Code: </label><br>
+		<input type="text" placeholder="Enter zipcode"><br>
+		
+		<input type="submit" formaction="CAN_Main_Page.html" value="Apply">
+		<input type="submit" formaction="CAN_Main_Page.html" value="Back">
 	</form>
-	<script>
-	function goBack() {
-	    window.history.back();
-	}
-	</script>
-</body>
+	</body>
 </html>
